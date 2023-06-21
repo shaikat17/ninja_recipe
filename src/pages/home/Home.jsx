@@ -3,7 +3,7 @@ import { useFetch } from "../../hooks/useFetch";
 
 const Home = () => {
   const { data, isPending, error } = useFetch("./db.json");
-  console.log(isPending);
+  // console.log(isPending);
 
   if (isPending) return <h1>Loading...</h1>;
 

@@ -5,6 +5,8 @@ export const useFetch = (url) => {
   const [isPending, setIsPending] = useState(false)
   const [error, setError] = useState(null)
 
+  // console.log(url)
+
   useEffect(() => {
     const controller = new AbortController()  //https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort
 
